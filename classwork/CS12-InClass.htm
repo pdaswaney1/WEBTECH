@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>CS11 - Javascript</title>
+        <script type="text/javascript">
+            function calculate () {
+                let x = document.getElementId("varX").innerHTML;
+                // alert (x)
+                let y = document.getElementbyId ("varY").innerHTML;
+                // alert (x)
+                let result =x * y;
+                // alert ("The result is", "+ result);
+                document.getElementById ("result").innerHTML = result;
+
+
+            }
+        </script>
+
+        <head>
+
+
+        </body>
+        <!--Your html goes here-->
+        <h1></h1>
+        <p>x= <span id="varX">2018</span></p>
+        <p>y=<span id="vary"> 2019 </span></p>
+        <p>The result of calucaltion is <span id="result"></span>.</p>
+        <button onclick="calculate()"> Click me! </button>
+
+
+    </body>
+
+    </html>
