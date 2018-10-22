@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Homework 3</title>
+        <style type="text/css">
+            h1 {
+                text-align: center;
+                font-family: Arial;
+                color: Navy;
+            }
+
+            img {
+                border: 6px solid navy;
+                margin-bottom: 100px;
+            }
+
+            p.cent {
+                text-align: center;
+            }
+
+            ul,
+            p#inst {
+                margin-right: 200px;
+                margin-left: 200px;
+                font-family: Cursive;
+                font-size: 1em;
+            }
+
+            li {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            button {
+                margin-right: 20px;
+                background-color: White;
+                height: 50px;
+                width: 140px;
+            }
+        </style>
+        <script type="text/javascript">
+        function animal_img(a){
+                var x=document.getElementById("img1");
+                var y=document.getElementById("heading1");
+                var m=document.getElementById("gs");
+                var n=document.getElementById("pn");
+                var o=document.getElementById("sl");
+                var p=document.getElementById("lx");
+                if (a=="gs"){
+                        x.src = "shepherd.jpg";
+                        x.title = "German Shepherd";
+                        x.alt = "Picture of German Shepherd";
+                        x.style.border = "6px solid orange";
+                        y.innerHTML = "German Shepherd";
+                        y.style.color = "orange";
+                        m.style.backgroundColor = "silver";
+                        n.style.backgroundColor = "white";
+                        o.style.backgroundColor = "white";
+                        p.style.backgroundColor = "white";
+                }
+                else if (a=="pn"){
+                        x.src = "penguin.jpg";
+                        x.title = "Penguin";
+                        x.alt = "Picture of Penguin";
+                        x.style.border = "6px solid red";
+                        y.innerHTML = "Penguin";
+                        y.style.color = "red";
+                        n.style.backgroundColor = "silver";
+                        m.style.backgroundColor = "white";
+                        o.style.backgroundColor = "white";
+                        p.style.backgroundColor = "white";
+                }
+                else if (a=="sl"){
+                        x.src = "snowleopard.jpg";
+                        x.title = "Snow Leopard";
+                        x.alt = "Picture of Snow Leopard";
+                        x.style.border = "6px solid lightgreen";
+                        y.innerHTML = "Snow Leopard";
+                        y.style.color = "lime";
+                        o.style.backgroundColor = "silver";
+                        m.style.backgroundColor = "white";
+                        n.style.backgroundColor = "white";
+                        p.style.backgroundColor = "white";
+                }
+                else if (a=="lx"){
+                        x.src = "lynx.jpg";
+                        x.title = "Lynx";
+                        x.alt = "Picture of Lynx";
+                        x.style.border = "6px solid lightblue";
+                        y.innerHTML = "Lynx";
+                        y.style.color = "lightblue";
+                        p.style.backgroundColor = "silver";
+                        m.style.backgroundColor = "white";
+                        n.style.backgroundColor = "white";
+                        o.style.backgroundColor = "white";
+                }
+        }
+        function inc(){
+            var x=document.getElementById("img1");
+            x=x.width;
+            x=parseFloat(x);
+            x=x*1.75;
+            document.getElementById("img1").width=x;
+        }
+        
+        function dec(){
+            var x=document.getElementById("img1");
+            x=x.width;
+            x=parseFloat(x);
+            x=x/1.75;
+            document.getElementById("img1").width=x;
+        }
+        </script>
+
+    </head>
+
+    <body>
+        <h1 id="heading1"> The Animal Name Goes Here</h1>
+        <p class="cent">
+            <img onmouseover="inc()" onmouseout="dec()" id="img1" src="" alt="Image Goes Here" title="Animal Name"/>
+        </p>
+        <p class="cent">
+            <button id="gs" onclick="animal_img(this.id)">German Shepherd</button>
+            <button id="pn" onclick="animal_img(this.id)">Penguin</button>
+            <button id="sl" onclick="animal_img(this.id)">Snow Leopard</button>
+            <button id="lx" onclick="animal_img(this.id)" id="last">Lynx</button>
+        </p>
+        <p id="inst">The homework is graded out of 25 points. Please create the functionality, using JavaScript, to do the following:</p>
+        <ul>
+            <li> Display the image of the animal corresponding to the button the user clicks on. The place-holder for the image
+                is provided to you. (8 points).</li>
+            <li> Change the color of the image border based on the animal displayed. Yellow for German Shepherd, Red for Penguin,Green
+                for Snow Leopard and, Lime for Lynx. If my color choices are poor, you can pick your own colors as long as
+                it is different and unique for each animal image.(4 points)</li>
+            <li> Change the heading, "The Animal Name Goes Here" to the type of animal shown. (3 points)</li>
+            <li> Change the background color of the button that the user clicks on to Silver. Only the button the user has clicked
+                on must be Silver. All others must be White.(5 points)</li>
+            <li>Write another function to enlarge the image by 75% when the user mouses-over it and return it to normal size
+                when the user mouses-out of the image.</li>
+            <li> Please use a single function for all of the above functionality (5 points). If you cannot, please use as many
+                functions as needed (0 points)</li>
+        </ul>
+
+    <a href="low.htm">List of Work</a>
+    </body>
+
+</html>

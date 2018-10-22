@@ -1,94 +1,59 @@
 <!DOCTYPE html>
-
 <html>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>CS14 - Quiz</title>
-
-        <style type="text/css">
-            h1,
-            h2,
-            h3 {
-                text-align: center;
-                font-family: Arial;
-            }
-            div.main {
-                width: 60%;
-                font-family: Arial;
-                font-size: large;
-                margin: 30px auto;
-            }
-            .circle {
-                width: 200px;
-                height: 200px;
-                border-radius: 50%;
-                float: left;
-                margin-right: 50px;
-            }
-            #blue-circle {
-                background-color: blue;
-            }
-            #green-circle {
-                background-color: green;
-            }
-            #red-circle {
-                background-color: red;
-            }
-        </style>
-
-<script type="text/javascript">
-    function onclick "change (this.id) () {
-       
-        if ("green-circle") {
-            h2 = "You just clicked green circle" ;
-          
-    }
-
-        else if ("blue-circle") {
-            h2 = "You just clicked blue circle" ;
-
-        else if ("red-circle") {
-            h2 = "You just clicked red circle" ;
+	<head>
+		<meta charset="UTF-8">
+		<title> Practice Question CS14-InClass2 </title>
+		<style type="text/css">
+			#add,
+			#sub,
+			#mul,
+			#div,
+			#clr {
+				width: 50px;
+				height: 30px;
+			}
+			form {
+				background-color: silver;
+				margin: 30px 200px 30px 200px;
+				padding: 40px 40px 40px 200px;
+			}
+			h1 {
+				text-align: center;
+			}
+		</style>
+        <script type="text/javascript">
+        function add() {
+            let f = document.getElementById ("calculator");
+            let x =f.num1.value;
+            let y = f/numb2.value;
+        }
         
+		</script>
+	</head>
+
+	<body>
+
+		<h1>The making of a small calculator </h1>
+		<form action="">
+			<p>Your Result: <input name="result" size="10" type="text"></p>
+			<p>Number 1: <input name="num1" size="5" type="text"> Number 2: <input name="num2" size="5" type="text"></p>
+			<p>
+				<input value="ADD" type="button">
+				<input value="SUB" type="button">
+				<input value="MULT" type="button">
+				<input value="DIV" type="button"> <br><br>
+				<input id="clr" value="Clear" name="reset" type="reset">
+			</p>
+
+		</form>
 
 
 
-}
-</script>
-
-</script>
-
-
-        
-    </head>
-
-
-
-    <body>
-        <h1> CS14 - Quiz</h1>
-        <div class="main">
-            <p>Please create the functionality to do the following: (a)
-                When you click any circle, h2 must change to "You just clicked (blue/green/red circle)". (b) When you
-                click the first or the second circle,
-                the color of this circle must change to a darker color, the other must change to a lighter color;
-                (c) When you click the red circle, the red circle
-                must disappear and the other two circles must change to the original colors; when you click the first
-                two circles, the red circle must re-appear.</p>
-        </div>
-
-        <hr />
-        <h2 id="header2">Play with circles</h2>
-        <div class="main">
-
-            <div class="circle" id="green-circle" onclick="change(this.id)"></div>
-
-            <div class="circle" id="blue-circle" onclick="change(this.id)"></div>
-
-            <div class="circle" id="red-circle" onclick="change(this.id)"></div>
-
-        </div>
-
-    </body>
+	</body>
 
 </html>
+
+
+
+    
