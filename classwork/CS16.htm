@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>CS16-InClass1</title>
+        <style type="text/css">
+            form {
+                background-color: Silver;
+                font-family: Arial;
+                color: Navy;
+                padding: 30px 50px 30px 100px;
+                margin-right: 150px;
+                margin-left: 150px;
+            }
+
+            h2 {
+                text-align: center;
+                font-family: Cursive;
+                color: Black;
+            }
+        </style>
+        <script type="text/javascript">
+        function process(){
+            var f=document.getElementById("form1");
+            var i, colorChoice;
+            for(i=0;i<f.colors.length; i++){
+                if (form1.colors[i].checked){
+                    colorChoice=form1.colors[i].value;
+                }
+            }
+            var x, magChoice="Magazine Choice: ";
+            for(x=0;x<f.mags.length;x++){
+                if(form1.mags[x].checked){
+                    magChoice+=form1.mags[x].value+"\n";
+                    }
+                }
+            document.getElementById("form1").result.value="Color Choice: "+colorChoice+"\n"+magChoice;
+            document.getElementById("form1").style.backgroundColor=+colorChoice;
+            return false;
+            }
+            
+        </script>
+
+    </head>
+
+    <body>
+        <!-- Your HTML goes here -->
+        <form id="form1" action="" method="post">
+            <h2>Processing Radio Button and Check Box</h2>
+            <p>
+                Please select a background color for the page:
+            </p>
+            <p>
+                Green: <input type="radio" name="colors" value="green" /> Yellow: <input type="radio" name="colors" value="yellow"
+                /> Lime: <input type="radio" name="colors" value="lime" /> Aqua: <input type="radio" name="colors" value="aqua"
+                />
+            </p>
+            <p>
+                Please select your favorite magazines: <br />
+                <input type="checkbox" name="mags" value="Vogue" />Vogue<br />
+                <input type="checkbox" name="mags" value="Elle" />Elle <br />
+                <input type="checkbox" name="mags" value="Cosmopoliton" />Cosmopoliton<br />
+                <input type="checkbox" name="mags" value="Teen Vogue" />Teen Vogue
+            </p>
+            <p>
+                <textarea name="result" cols="40" rows="4"></textarea>
+            </p>
+            <p>
+                <input onclick="return process()" type="submit" name="submit" value="Go!" />
+                <input type="reset" name="Reset" value="Clear!" />
+            </p>
+
+        </form>
+
+
+</html>
