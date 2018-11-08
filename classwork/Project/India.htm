@@ -1,149 +1,230 @@
 
-    <!DOCTYPE html>
-    <html>
-    
-    <head>
-            <meta charset="UTF-8">
-            <meta name="description" content="Beauty Boss: Sharing stories from beauty entrepreneaurs from around the world />
-            <meta name="author" content="Parina Daswaney">
-            <title>BeautyBoss</title>
-            <link rel="stylesheet" type="text/css" href="style.css">
-            <style type="text/css">
-        body{
-                background-image: url(images/asian.jpg);
-        }
-       
-        </style>
-        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-        <script type="text/javascript">
-        function bg_color1(a){
-                var x=document.getElementById(a);
-                x.style.backgroundColor="black";
-                x.style.color="pink";                    
-                x.style.textShadow="none";
-        }
-        function bg_color2(b){
-                var x=document.getElementById(b);
-                x.style.background="none";
-                x.style.color="white";
-                x.style.textShadow="-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000"
-        }
-        function chng_hd(){
-                var x=document.getElementById("chnghd");
-                x.innerHTML="BEAUTY BOSS"
-        }
-        function show_info(a){
-                var b=document.getElementById(a);
-                var x=document.getElementById("r1");
-                var y=document.getElementById("r2");
-                var z=document.getElementById("r3")
-                if(a=="hd1"){
-                        x.innerHTML="Innovative, refined sushi & small plates · Leather District · $$$$";
-                }
-                else if(a=="hd2"){
-                        y.innerHTML="Omakase menus & creative Asian fare · Back Bay · $$$";
-                }
-                else if(a=="hd3"){
-                        z.innerHTML="Stylish lounge with Pan-Asian dishes · Back Bay · $$$";
-                }
-        }
-        </script>
-</head>
-
-<body>
-
-
-       <h2 id="chnghd" onclick="chng_hd()" class="mainheading">India</h2>
-       <p>
-        <span id="hd1" onclick="show_info(this.id)" class="heading">Divya Gugnani</span><br>
-        <span id="r1" class="info"></span>
-
-<p>Divya Gugnani, serial entrepreneur & mom of two and Lindsay Ellingson, jet-setting supermodel, realized that there were a lack of beauty companies that catered to women on-the-go.  They founded the company Wander Beauty to streamline makeup routines everywhere and create a line of multi-tasking beauty essentials inspired by their international travels. Read on more to find out about Divya and Wander Beauty:
-
-        Why did you and Lindsay decide to start your own beauty line?
+   <!DOCTYPE html>
+   <html>
+   
+   <head>
+           <meta charset="UTF-8">
+           <meta name="description" content="Beauty Boss: Sharing stories from beauty entrepreneaurs from around the world />
+           <meta name="author" content="Parina Daswaney">
+           <title>BeautyBoss</title>
+           <link rel="stylesheet" type="text/css" href="style.css">
+           <style type="text/css">
+           
+           body{
         
+        color: black;
+        text-align: center;
+        background-color: white;
+      }
+
         
+p.info{
+        text-align: justify;
+        padding:0px 50px 0px 50px;
+        font-size: 30px;
+        text-indent: 50px;
+        font-weight: bold;
+}
+td{
+        background-color: white;
+        color: black;
+        opacity: 0.7;
+}
+table :hover{
+        opacity: 1;
+}
+table{
+        margin: 70px 170px 30px 170px;
+}
+                   
+           a#low{
+               font-size: 30px;
+               text-decoration: none;
+               color: black;  
+               font-weight: bold;  
+           }
+           img#img1{
+                   width:30%;;
+                   height: 300px;
+                   border: 5px ridge black;
+           }
+           p#imgtitle{
+                   margin-left: auto;
+                   margin-right: auto;
+                   font-weight: bolder;
+                   font-size: 30px;
+   
+           }
+
+           h1 {
+                   text-align: center; 
+                   font-weight: bolder; 
+                   font-size: 30px; 
+                   font-family: 'Times New Roman', Times, serif;}
+
+           h2 {
+                   text-align: left; 
+                   font-weight: bolder; 
+                   font-size: 20px; 
+                   font-family: 'Times New Roman', Times, serif;}
+        
+            p{text-align: left; font-size: 18px; font-family: 'Times New Roman', Times, serif;}
+   
+           ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+       overflow: hidden;
+       background-color:#dd0072;
+       text-align: left  ;
+   }
+   
+   li {
+       float: left;
+   }
+   
+   li a {
+       display: block;
+       color: white;
+       text-align: center;
+       padding: 12px 12px;
+       text-decoration: none;
+   }
+   
+   li a:hover {
+       background-color: #111;
+   }
+   
+   .navbar {
+     overflow: hidden;
+     background-color: #333;
+     font-family: Arial;
+   }
+   
+   .navbar a {
+     float: left;
+     font-size: 16px;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+   }
+   
+   .dropdown {
+     float: left;
+     overflow: hidden;
+   }
+   
+   
+   .dropdown .dropbtn {
+     font-size: 16px; 
+     border: none;
+     outline: none;
+     color: white !important;
+     padding: 14px 16px;
+     background-color: inherit;
+     font-family: inherit; 
+     margin: 0; 
+   }
+   
+   .navbar a:hover, .dropdown:hover .dropbtn {
+     background-color: red;
+   }
+   
+   
+   .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #f9f9f9;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+   }
+   
+   .dropdown-content a {
+     float: none;
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     text-align: left;
+   }
+   
+   .dropdown-content a:hover {
+     background-color: #ddd;
+   }
+   
+   .dropdown:hover .dropdown-content {
+     display: block;
+   }
+   .label1 {
+           width: 28%;
+           z-index: 2;
+           height: 150px;
+           position: relative;
+           display: inline-block;
+           top: 308px;
+   }
+   
+           </style>
+   
+   </head>
+   
+   <body>
+   
+   <ul>
+     <li class="nav" id="active"><a href="index1.htm">Home</a></li>
+     <li class="nav"><a href="contact.htm">Contact Us</a></li>
+     <li class="nav"><a href="AboutMe.htm">About Me <Menu></Menu></a></li>
+     <li class="nav"><a href="SiteMap.htm">Site Map <Menu></Menu></a></li>
+     <div class="dropdown">
+           <button class="dropbtn"><a style="color:white; text-decoration: none"href="BeautyBosses.html">BeautyBoss</a></li>
+             <i class="fa fa-caret-down"></i>
+           </button>
+           <div class="dropdown-content">
+                   <a class="nav" href="USA.htm">USA</a>
+                            <a class="nav" href="India.htm">India</a>
+                            <a class="nav" href="Australia.htm">Australia</a>
+           </div></div>
+           
+   
+                   
+   </li>
+   </ul>
+
+   <h1>Rubeina Karachiwalla: Ruby's Organics</h1>
+
+   <img src="ruby.png" alt="Rubeina" title="Rubeina"> 
+
+   <body>
+
+
+        <p>
+        Rubeina Karachiwalla is the founder of Ruby’s Organics: India’s first organic makeup line. Ruby’s Organics aims to turn makeup into value added skin-care through the use of natural and organically sourced ingredients. Read on to find out more about Rubeina and Ruby’s Organics:
+        </p>
+
+        <h2>Why did you start Ruby’s Organics?</h2>
+        <p>Ever since I was a teenager, I have  been fascinated with the beauty industry. At the age of 25, I quit my job and decided to take a certified makeup course. Other than the application techniques, I learned everything there was to know about makeup from formulations, chemicals, etc.  When I started reading and researching more about the industry, I was surprised by the various toxic chemicals many of our daily beauty products contained. I started experimenting in my kitchen by ordering raw materials from eBay and making “natural” beauty products with my grinder. I noticed that when I was using these natural products, my skin just felt and looked healthier. I continued to fine tune my beauty recipes and finally received the license to manufacture my products in India, now known as Ruby’s Organics. I developed Ruby’s Organics as a healthier beauty company for the Indian women today.</p>
+        
+        <h2>Can you tell us about the products?</h2>
+        <p>I started by developing a basic line of products, such as eyeliner and lipstick, to first understand customer preferences. When I received a positive response, I developed a full range of cosmetics including eyeliners, mascaras, lipsticks, eyeshadows, highlighters, and concealers that even work as foundation. Our products are all formulated with naturally soured ingredients and are devoid of chemical preservatives. For example, our lipstick and concealers are a combination of seed butters, beeswax, oils, and pigments. Our products are made  from natural minerals and pigmented with micas, allowing for makeup that is lightweight and nourishing for the skin.<p>
          
-        I actually have a background in finance and I sold my most recent company to QVC. After I became a working mom my life changed. I realized that I could no longer make myself look presentable, while also taking care of my family. I realized that there was no beauty brand that responded to my problems. The beauty industry was overcrowded with companies offering more than hundred beauty products that most women didn’t know how to use. 
+        <h2>How did you go about creating the formulas? What were the ingredients used instead of chemicals? </h2>
+        <p>As we created Ruby’s Organics, we started looking for natural alternatives to synthetic ingredients. We use beeswax instead of petroleum, and mica instead of silicas. Our products are formulated with a combination of mineral, organic, and natural ingredients. As a company we are 68% organic and 100% healthy.</p>
         
-        I met Lindsay at a party and we immediately clicked. She shared her experience of how much she loved beauty, but was always traveling because of her modeling job. When you think about women today, we are so much busier than we were a few years ago. We quickly bonded over a joint passion for beauty and travel and decided to work together to create a chic line of multi-tasking cosmetics and that was where Wander Beauty was born.
-        
-        With Wander Beauty we give you fewer, but better beauty essentials. With innovative offerings like our dual-ended lipsticks (https://www.wanderbeauty.com/wanderout-dual-lipsticks) or two-in-one concealer (https://www.wanderbeauty.com/dualist-matte-and-illuminating-concealer), we enable our customers to streamline their beauty routines and give you fewer essential products that they need to carry around. When we say better, we mean clean. People don’t realize this, but many products that we use on a daily basis have a bunch of chemicals and toxins. Our products are free of parabens, mineral oils, phthalates, and synthetic fragrances. That is  why our must-haves are enriched with luxurious, skin loving ingredients that work with your skin, not against it.
-        
-        
-         
-        How did your past experience in finance and investment banking help you launch the line?
-        
-        My experience in finance and investment banking gave me great fundamentals when it came to thinking through the business model and capital needs of the company. It also made me careful and cautious about how we wanted to finance our growth.
-        
-        Can you tell us a bit more about Wander Beauty, and what differentiates your company from other beauty brands (e.g.. packaging, ingredients, etc). 
-        
-        Our brand speaks to time struck, women on-the-go. Just like everyone associates the Tiffany Blue with Tiffany we wanted our packaging to stand out. Our packaging is in a rich burgundy color known as Wanderberry with gold accents so that customers can immediately recognize our brand. Our ingredients are sourced world wide. We capture special extracts that provide powerful benefits and add to the purpose of the products and enrich the travel/wander experience.
-        
-        How do you balance being a mom and running your own company?
-        
-        
-         
-        Over the years I have learned that you can have it all, but not at one time. I try and give 100 percent to what I am doing. If I am home, that means full attention to my family, and if I am at the office, it means I am giving my hundred percent there.
-        
-        I actually  started Wander Beauty after my daughter was born. At the time my husband thought I was crazy starting my own business especially with two little ones in the house. However, I realized you have to do it when it comes to you. I saw this huge opportunity after Lindsay and I interviewed 100 women from different ethnicities and different age groups to understand their pain points. We realized that many of these women faced similar issues where they complained about having too many beauty products and makeup that wouldn’t travel with them. Lindsay and I learned that we could create a brand that solves their problems.
-        
-        When we launched the company we initially starting working out of my apartment.  Once we expanded we then moved into an office space. Ultimately, we worked according to our different stages. I was lucky to have the support of my family. I mean things are never perfect, but as a family we have to make compromises  and we ultimately just do it and figure it out.
-        
-        What are some of the most popular products in the line and why?
-        
-        We have won 12 beauty awards. Some of our most popular products are our mascara, double sided concealer and powder. We also recently launched a new skin care line where one of our favorite products is the Baggage Claim Gold Eye Masks (https://www.wanderbeauty.com/baggage-claim-gold-eye-masks) . Essentially, it helps to hydrate the undereye and the microfiber coils retain heat and moisture fifty more times effectively.
-        
-        Anything else you would like to add.
-        
-        We are constantly trying to innovate. We are always open to our customers giving us feedback. Ultimately this process is a dialogue between us and our consumers and we want it to be a collaborative one.
-        
-        We loved speaking to Divya and are excited about the innovative offerings of her company! Don’t forget to check out Wander Beauty here: https://www.wanderbeauty.com</p>
+        <h2>Can you provide our readers with tips to responsibly for beauty products and chemicals they should refrain from?</h2>
+        <p>My biggest piece of advice is know what you are putting on your skin. Look through the ingredient list of your beauty products and do your research. It’s important to empower ourselves with the right information, so we can buy responsibly.
+            I would recommend to refrain from any product that contains alcohol like ethanol, isopropyl alcohol, methanol, etc. They tend to dry out the skin causing irritation and leading to breakouts. Also avoid any petroleum based products. Petroleum jelly is an “occlusive” agent meaning it creates a barrier on the skin and suffocates the pores.
+        </p>              
+        <h2>As a female entrepreneur in India, what were some of the challenges you faced?</h2>  
+        <p> There were way too many. I had not been funded, so I scraped through my savings and took a loan from my Dad to start this company. Initially, when Ruby’s Organics was just an idea, no one took me seriously as I was only 25-year-old female. When I was sourcing and contacting vendors from small town villages, no one understood this concept of an organic cosmetic line. My manufacturer also was refusing to accept that this would be a possibility. After three years of struggles and challenges, I finally built my brand and even received a FDA approval. </p>
 
-        Divya Gugnani, serial entrepreneur & mom of two and Lindsay Ellingson, jet-setting supermodel, realized that there were a lack of beauty companies that catered to women on-the-go.  They founded the company Wander Beauty to streamline makeup routines everywhere and create a line of multi-tasking beauty essentials inspired by their international travels. Read on more to find out about Divya and Wander Beauty:
+        <h2>Where can consumers find Ruby’s Cosmetics and what are future plans of expansion? </h2>  
+        <p>We mainly sell our products digitally through our website. However, our products can also be found on Nykaa, Amazon, and Scootsy. We have also tied up with local boutiques in cities around India (Bandra, Pondicherry, New Delhi, Calcutta, etc) that cater to this natural/organic market specifically.
+        Our goal is to spend a little more time in India and eventually reach a point where we can diversify and sell internationally. For that we would need investors to get involved and would we would have to scale our business so that it is faster and better.</p>
 
-        Why did you and Lindsay decide to start your own beauty line?
-        
-        
-         
-        I actually have a background in finance and I sold my most recent company to QVC. After I became a working mom my life changed. I realized that I could no longer make myself look presentable, while also taking care of my family. I realized that there was no beauty brand that responded to my problems. The beauty industry was overcrowded with companies offering more than hundred beauty products that most women didn’t know how to use. 
-        
-        I met Lindsay at a party and we immediately clicked. She shared her experience of how much she loved beauty, but was always traveling because of her modeling job. When you think about women today, we are so much busier than we were a few years ago. We quickly bonded over a joint passion for beauty and travel and decided to work together to create a chic line of multi-tasking cosmetics and that was where Wander Beauty was born.
-        
-        With Wander Beauty we give you fewer, but better beauty essentials. With innovative offerings like our dual-ended lipsticks (https://www.wanderbeauty.com/wanderout-dual-lipsticks) or two-in-one concealer (https://www.wanderbeauty.com/dualist-matte-and-illuminating-concealer), we enable our customers to streamline their beauty routines and give you fewer essential products that they need to carry around. When we say better, we mean clean. People don’t realize this, but many products that we use on a daily basis have a bunch of chemicals and toxins. Our products are free of parabens, mineral oils, phthalates, and synthetic fragrances. That is  why our must-haves are enriched with luxurious, skin loving ingredients that work with your skin, not against it.
-        
-        
-         
-        How did your past experience in finance and investment banking help you launch the line?
-        
-        My experience in finance and investment banking gave me great fundamentals when it came to thinking through the business model and capital needs of the company. It also made me careful and cautious about how we wanted to finance our growth.
-        
-        Can you tell us a bit more about Wander Beauty, and what differentiates your company from other beauty brands (e.g.. packaging, ingredients, etc). 
-        
-        Our brand speaks to time struck, women on-the-go. Just like everyone associates the Tiffany Blue with Tiffany we wanted our packaging to stand out. Our packaging is in a rich burgundy color known as Wanderberry with gold accents so that customers can immediately recognize our brand. Our ingredients are sourced world wide. We capture special extracts that provide powerful benefits and add to the purpose of the products and enrich the travel/wander experience.
-        
-        How do you balance being a mom and running your own company?
-        
-        
-         
-        Over the years I have learned that you can have it all, but not at one time. I try and give 100 percent to what I am doing. If I am home, that means full attention to my family, and if I am at the office, it means I am giving my hundred percent there.
-        
-        I actually  started Wander Beauty after my daughter was born. At the time my husband thought I was crazy starting my own business especially with two little ones in the house. However, I realized you have to do it when it comes to you. I saw this huge opportunity after Lindsay and I interviewed 100 women from different ethnicities and different age groups to understand their pain points. We realized that many of these women faced similar issues where they complained about having too many beauty products and makeup that wouldn’t travel with them. Lindsay and I learned that we could create a brand that solves their problems.
-        
-        When we launched the company we initially starting working out of my apartment.  Once we expanded we then moved into an office space. Ultimately, we worked according to our different stages. I was lucky to have the support of my family. I mean things are never perfect, but as a family we have to make compromises  and we ultimately just do it and figure it out.
-        
-        What are some of the most popular products in the line and why?
-        
-        We have won 12 beauty awards. Some of our most popular products are our mascara, double sided concealer and powder. We also recently launched a new skin care line where one of our favorite products is the Baggage Claim Gold Eye Masks (https://www.wanderbeauty.com/baggage-claim-gold-eye-masks) . Essentially, it helps to hydrate the undereye and the microfiber coils retain heat and moisture fifty more times effectively.
-        
-        Anything else you would like to add.
-        
-        We are constantly trying to innovate. We are always open to our customers giving us feedback. Ultimately this process is a dialogue between us and our consumers and we want it to be a collaborative one.
-        
-        We loved speaking to Divya and are excited about the innovative offerings of her company! Don’t forget to check out Wander Beauty here: https://www.wanderbeauty.com
-</p>
+        <p>Rubeina is such an inspiration for female entrepreneaurs in India and we wish her all the best as she creates a mark in the natural beauty industry. Check out Ruby’s Organics here: <a href "https://rubysorganics.in/"> Ruby's Organics </p>
 
-<body>
                 <a href="https://www.youtube.com/watch?v=6BJ4LxXoPjs">Intro to Tatcha</a>
 
 

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Beauty Boss: Sharing stories from beauty entrepreneaurs from around the world" />
+        <meta name="keywords" content="beauty bosses, entrepreneaurs, interviews, " />
+        <meta name="author" content="Parina Daswaney">
+        <title>Contact Us</title>
+         <link rel="stylesheet" type="text/css" href="style.css">
+         <style type="text/css">
+         body{
+                 color: black;
+                 
+         }
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color:#dd0072;
+text-align: left  ;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 12px 12px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: #111;
+}
+
+.navbar {
+overflow: hidden;
+background-color: #333;
+font-family: Arial;
+}
+
+.navbar a {
+float: left;
+font-size: 16px;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.dropdown {
+float: left;
+overflow: hidden;
+}
+
+
+.dropdown .dropbtn {
+font-size: 16px; 
+border: none;
+outline: none;
+color: white !important;
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit;
+margin: 0; 
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+background-color: red;
+}
+
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+        </style>
+
+        <script type="text/javascript">
+        function validate(){
+                var f=document.getElementById("form1");
+                var fname=f.firstname.value;
+                var lname=f.lastname.value;
+                var emailaddress=emailaddress.value;
+                var g=f.email.value;
+                var i=f.infousefullness.value;
+
+                if (fname=="" || lname==""){
+                        alert("Please Enter your Full Name!");
+                }
+                else if(!isNaN(fname) || !isNaN(lname)){
+                        alert("Please do not enter numerical values in your name!");
+                }
+                else if(g==""){
+                        alert("Please select your Gender!")
+                }
+                else if(i=="null"){
+                        alert("Please select an option for Usefullness of Information on Site!")
+                }
+        }
+        </script>
+
+</head>
+
+<body>
+<ul>
+                <ul>
+                                <li class="nav" id="active"><a href="index1.htm">Home</a></li>
+                                <li class="nav"><a href="ContactUs.htm">Contact Us</a></li>
+                                <li class="nav"><a href="AboutMe.htm">About Me <Menu></Menu></a></li>
+                                <div class="dropdown">
+                                      <button class="dropbtn"><a style="color:white; text-decoration: none"href="BeautyBosses.html">BeautyBoss</a></li>
+                                        <i class="fa fa-caret-down"></i>
+                                      </button>
+                                      <div class="dropdown-content">
+                                              <a class="nav" href="USA.htm">USA</a>
+                                                       <a class="nav" href="India.htm">India</a>
+                                                       <a class="nav" href="Australia.htm">Australia</a>
+                                      </div></div>
+                                      
+                              
+                                              
+                
+</li>
+</ul>
+<h1>Contact Us</h1>    
+
+<form id="form1">
+
+<p> First Name<input type="text" name="firstname" maxlength="150"/>
+    Last Name<input type= "text" name="lastname" maxlength="150"/>
+    Email Address<input type= "text" name="emailaddress" maxlength="150"/>
+</p>
+<p> Gender: 
+        Male <input type="radio" name="gender" value="male"/>
+        Female <input type="radio" name="gender" value="female"/>
+</p>
+
+</p>
+<p> Please provide any other comments that you have: <br>
+        <textarea name="comments" rows="6" cols="40">
+        </textarea> 
+        <br>
+        <input onclick="validate()" type="submit" name="Sumbit" value="submit" />
+        <input type="reset" name="Reset" value="Clear All" />
+</p>
+
+
+</body>
+
+</html>

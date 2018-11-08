@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>Q2</title>
+
+	<style type="text/css">
+	/* Your styles go here */
+
+	</style>
+	
+	<script type="text/javascript">
+		
+	function a()
+		{
+		document.getElementById("1").style.textIndent="20px";
+		}
+	
+	function b()
+		{
+		document.getElementById("2").style.textAlign="center";
+		document.getElementById("3").src="smile.jpg";
+		document.getElementById("4").innerHTML="Two";
+		}
+	
+	</script>
+  </head>
+
+  <body >
+	<!-- Your HTML goes here -->
+	  <h1 id="2">Question <span id="4">2</span></h1>
+	<p id="1" onclick="a()">Modify this page so that clicking anywhere in this paragraph indents its first line by 20px (9 pts).  Clicking on the button should center the heading, change the image from frown.jpg to smile.jpg, and change the number 2 in the heading to the word Two.</p>
+	<img src="frown.jpg" alt="emoji" id="3" />
+	<button onclick="b()">Click Me</button>
+  </body>
+</html>
